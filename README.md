@@ -35,7 +35,7 @@
 </div>
 
 <div align="center">
-  [![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </div>
 
-Last updated: Thu Apr 24 16:29:50 UTC 2025
+
