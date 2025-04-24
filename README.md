@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="left">Hi there 👋<br><br>I'm currently diving deep into the exciting world of Artificial Intelligence and Machine Learning. You'll find me experimenting with various concepts and, more importantly, building my understanding by implementing ML algorithms from scratch. I also have a strong curiosity for understanding the inner workings of systems and how things function behind the scenes. Always eager to learn and contribute!</h4>
+<h3 align="left">Hi there 👋<br><br>I'm currently diving deep into the exciting world of Artificial Intelligence and Machine Learning. You'll find me experimenting with various concepts and, more importantly, building my understanding by implementing ML algorithms from scratch. I also have a strong curiosity for understanding the inner workings of systems and how things function behind the scenes. Always eager to learn and contribute!</h3>
 
 ###
 
