@@ -1,8 +1,8 @@
 name: Update README
 
 on:
-  push:                   # Trigger on every push
-  workflow_dispatch:      # Allow manual trigger from GitHub UI
+  push:            # Triggers on any push to any branch
+  workflow_dispatch:     # Allows manual triggering from GitHub UI
 
 jobs:
   update-readme:
@@ -12,39 +12,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Git config
+      - name: Modify README.md to update timestamp
+        run: |
+          echo "Last updated: $(date -u)" > last_updated.txt
+          cat last_updated.txt >> README.md
+
+      - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-
-      - name: Update README with latest GitHub stats
-        run: |
-          cat > README.md << 'EOF'
-# 💫 About Me:
-### Hi there 👋<br><br>I'm currently diving deep into the exciting world of Artificial Intelligence and Machine Learning. You'll find me experimenting with various concepts and, more importantly, building my understanding by implementing ML algorithms from scratch. I also have a strong curiosity for understanding the inner workings of systems and how things function behind the scenes. Always eager to learn and contribute!
-
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=TathagatChavada&theme=swift&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=TathagatChavada&theme=swift&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=TathagatChavada&theme=swift&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=TathagatChavada&theme=swift&no-frame=true&no-bg=false&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
----
-[![](https://visitcount.itsvg.in/api?id=TathagatChavada&icon=0&color=4)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-EOF
-
-      - name: Commit and push if changed
-        run: |
           git add README.md
-          git diff --cached --quiet || git commit -m "chore: auto-update README with latest GitHub stats"
+          git commit -m "chore: auto-update README with latest timestamp" || echo "No changes to commit"
           git push
