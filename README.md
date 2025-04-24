@@ -18,8 +18,6 @@
 
 ###
 
-<h1 align="left">Stats:</h1>
-
 ###
 
 <div align="center">
