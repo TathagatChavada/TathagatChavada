@@ -34,7 +34,4 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TathagatChavada&radius=16&theme=react&area=true&order=5&hide_border=true&hide_title=false" height="300" alt="activity-graph graph"  />
 </div>
 
-###
-Last updated: Thu Apr 24 13:40:39 UTC 2025
-Last updated: Thu Apr 24 13:43:49 UTC 2025
-Last updated: Thu Apr 24 13:46:21 UTC 2025
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
