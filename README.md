@@ -21,7 +21,6 @@
 <h1 align="left">Stats:</h1>
 
 ###
-[![Tathagat's github stats](https://github-readme-stats.vercel.app/api?username=TathagatChavada&count_private=true&show_icons=true&theme=radical&hide_rank=false)]
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TathagatChavada&radius=16&theme=react&area=true&order=5&hide_border=true&hide_title=false" height="300" alt="activity-graph graph"  />
@@ -30,4 +29,3 @@
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </div>
-Last updated: Thu Apr 24 16:52:16 UTC 2025
