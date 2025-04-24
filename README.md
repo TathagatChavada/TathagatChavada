@@ -21,9 +21,7 @@
 <h1 align="left">Stats:</h1>
 
 ###
-
-<div align="left">
-</div>
+[![Tathagat's github stats](https://github-readme-stats.vercel.app/api?username=TathagatChavada&count_private=true&show_icons=true&theme=radical&hide_rank=false)](https://github.com/TathagatChavada/github-readme-stats)
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TathagatChavada&radius=16&theme=react&area=true&order=5&hide_border=true&hide_title=false" height="300" alt="activity-graph graph"  />
