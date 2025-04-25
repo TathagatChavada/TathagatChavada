@@ -12,7 +12,7 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,go,rust,python,sklearn,pytorch" />
+    <img src="https://skillicons.dev/icons?i=c,python,sklearn,pytorch" />
   </a>
 </p>
 
@@ -23,4 +23,3 @@
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </div>
-Last updated: Thu Apr 24 21:13:14 UTC 2025
